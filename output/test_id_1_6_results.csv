@@ -1,0 +1,106 @@
+test_case_id,test_case_name,test_case_result,test_case_error
+tests_generated/test_id_1_6.py::test_company_name_case_handling[test_case0],test_company_name_case_handling[test_case0],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='microsoft corporation', metadata={}), P...'mIcRoSoFt corp.', metadata={}), Parameter(parameter_id='P005', name='Company Name', value='aPPle iNC.', metadata={})])
+test_case = <test_id_1_6.MasterTestCase object at 0x000001D9708F4980>
+
+    @pytest.mark.parametrize(""test_case"", ALL_CASE_COMPANYNAME_TESTS)
+    def test_company_name_case_handling(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(f""Parameter {pid}: {reason}"" for pid, reason in failures)
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-CASE-COMPANYNAME-01
+E         Failures:
+E         Parameter P004: Normalized 'Microsoft Corp.' does not match official company names
+E       assert not [('P004', ""Normalized 'Microsoft Corp.' does not match official company names"")]
+
+tests_generated\test_id_1_6.py:189: AssertionError"
+tests_generated/test_id_1_6.py::test_company_name_case_handling[test_case1],test_company_name_case_handling[test_case1],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='microsoft corporation', metadata={}), P...'mIcRoSoFt corp.', metadata={}), Parameter(parameter_id='P005', name='Company Name', value='aPPle iNC.', metadata={})])
+test_case = <test_id_1_6.MasterTestCase object at 0x000001D9708D6990>
+
+    @pytest.mark.parametrize(""test_case"", ALL_CASE_COMPANYNAME_TESTS)
+    def test_company_name_case_handling(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(f""Parameter {pid}: {reason}"" for pid, reason in failures)
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-CASE-COMPANYNAME-02
+E         Failures:
+E         Parameter P004: Normalized 'Microsoft Corp.' does not match official company names
+E       assert not [('P004', ""Normalized 'Microsoft Corp.' does not match official company names"")]
+
+tests_generated\test_id_1_6.py:189: AssertionError"
+tests_generated/test_id_1_6.py::test_company_name_case_handling[test_case2],test_company_name_case_handling[test_case2],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='microsoft corporation', metadata={}), P...'mIcRoSoFt corp.', metadata={}), Parameter(parameter_id='P005', name='Company Name', value='aPPle iNC.', metadata={})])
+test_case = <test_id_1_6.MasterTestCase object at 0x000001D9708D7250>
+
+    @pytest.mark.parametrize(""test_case"", ALL_CASE_COMPANYNAME_TESTS)
+    def test_company_name_case_handling(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(f""Parameter {pid}: {reason}"" for pid, reason in failures)
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-CASE-COMPANYNAME-03
+E         Failures:
+E         Parameter P004: Normalized 'Microsoft Corp.' does not match official company names
+E       assert not [('P004', ""Normalized 'Microsoft Corp.' does not match official company names"")]
+
+tests_generated\test_id_1_6.py:189: AssertionError"
+tests_generated/test_id_1_6.py::test_company_name_case_handling[test_case3],test_company_name_case_handling[test_case3],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='microsoft corporation', metadata={}), P...'mIcRoSoFt corp.', metadata={}), Parameter(parameter_id='P005', name='Company Name', value='aPPle iNC.', metadata={})])
+test_case = <test_id_1_6.MasterTestCase object at 0x000001D9708D1940>
+
+    @pytest.mark.parametrize(""test_case"", ALL_CASE_COMPANYNAME_TESTS)
+    def test_company_name_case_handling(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(f""Parameter {pid}: {reason}"" for pid, reason in failures)
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-CASE-COMPANYNAME-04
+E         Failures:
+E         Parameter P004: Case variation breaks legal identity match — Fail
+E       assert not [('P004', 'Case variation breaks legal identity match — Fail')]
+
+tests_generated\test_id_1_6.py:189: AssertionError"
+tests_generated/test_id_1_6.py::test_company_name_case_handling[test_case4],test_company_name_case_handling[test_case4],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='microsoft corporation', metadata={}), P...'mIcRoSoFt corp.', metadata={}), Parameter(parameter_id='P005', name='Company Name', value='aPPle iNC.', metadata={})])
+test_case = <test_id_1_6.MasterTestCase object at 0x000001D9708D1A70>
+
+    @pytest.mark.parametrize(""test_case"", ALL_CASE_COMPANYNAME_TESTS)
+    def test_company_name_case_handling(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(f""Parameter {pid}: {reason}"" for pid, reason in failures)
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-CASE-COMPANYNAME-05
+E         Failures:
+E         Parameter P004: Auto-corrected 'Microsoft Corp.' does not match official company names
+E       assert not [('P004', ""Auto-corrected 'Microsoft Corp.' does not match official company names"")]
+
+tests_generated\test_id_1_6.py:189: AssertionError"

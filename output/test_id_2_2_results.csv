@@ -1,0 +1,47 @@
+test_case_id,test_case_name,test_case_result,test_case_error
+tests_generated/test_id_2_2.py::test_partial_profile[test_case0],test_partial_profile[test_case0],pass,
+tests_generated/test_id_2_2.py::test_partial_profile[test_case1],test_partial_profile[test_case1],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='Tiny Startup LLC', metadata={}), Parame...rowth Metrics', value='', metadata={}), Parameter(parameter_id='P008', name='Hiring Velocity', value='', metadata={})])
+test_case = <test_id_2_2.MasterTestCase object at 0x000001D970990410>
+
+    @pytest.mark.parametrize(""test_case"", ALL_PARTIAL_PROFILE_TESTS)
+    def test_partial_profile(dataset, test_case):
+        failures = evaluate_dataset(test_case, dataset)
+>       assert not failures, (
+            f""\nPartial Profile Validation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(failures)
+        )
+E       AssertionError: 
+E         Partial Profile Validation Failure
+E         Test Case: TC-PARTIALPROFILE-02
+E         Failures:
+E         Optional enrichment fields very sparse (0/5) — consider manual follow-up
+E       assert not ['Optional enrichment fields very sparse (0/5) — consider manual follow-up']
+
+tests_generated\test_id_2_2.py:203: AssertionError"
+tests_generated/test_id_2_2.py::test_partial_profile[test_case2],test_partial_profile[test_case2],pass,
+tests_generated/test_id_2_2.py::test_partial_profile[test_case3],test_partial_profile[test_case3],pass,
+tests_generated/test_id_2_2.py::test_partial_profile[test_case4],test_partial_profile[test_case4],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='Tiny Startup LLC', metadata={}), Parame...rowth Metrics', value='', metadata={}), Parameter(parameter_id='P008', name='Hiring Velocity', value='', metadata={})])
+test_case = <test_id_2_2.MasterTestCase object at 0x000001D9708D1F30>
+
+    @pytest.mark.parametrize(""test_case"", ALL_PARTIAL_PROFILE_TESTS)
+    def test_partial_profile(dataset, test_case):
+        failures = evaluate_dataset(test_case, dataset)
+>       assert not failures, (
+            f""\nPartial Profile Validation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(failures)
+        )
+E       AssertionError: 
+E         Partial Profile Validation Failure
+E         Test Case: TC-PARTIALPROFILE-05
+E         Failures:
+E         Low richness score (0.00) — profile accepted, but reflects limited data
+E       assert not ['Low richness score (0.00) — profile accepted, but reflects limited data']
+
+tests_generated\test_id_2_2.py:203: AssertionError"
+tests_generated/test_id_2_2.py::test_partial_profile[test_case5],test_partial_profile[test_case5],pass,
+tests_generated/test_id_2_2.py::test_partial_profile[test_case6],test_partial_profile[test_case6],pass,
+tests_generated/test_id_2_2.py::test_partial_profile[test_case7],test_partial_profile[test_case7],pass,

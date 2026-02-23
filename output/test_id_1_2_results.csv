@@ -1,0 +1,74 @@
+test_case_id,test_case_name,test_case_result,test_case_error
+tests_generated/test_id_1_2.py::test_company_name_negative_validation[test_case0],test_company_name_negative_validation[test_case0],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='', metadata={}), Parameter(parameter_id...ompany Name', value='   ', metadata={}), Parameter(parameter_id='P003', name='Company Name', value=None, metadata={})])
+test_case = <test_id_1_2.MasterTestCase object at 0x000001D9708F57F0>
+
+    @pytest.mark.parametrize(""test_case"", ALL_1_2_COMPANYNAME_TESTS)
+    def test_company_name_negative_validation(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(
+                f""Parameter {pid}: {reason}""
+                for pid, reason in failures
+            )
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-1.2-COMPANYNAME-01
+E         Failures:
+E         Parameter P001: Empty string detected — Violates Not Null rule and business requirement: Must match official registration
+E       assert not [('P001', 'Empty string detected — Violates Not Null rule and business requirement: Must match official registration')]
+
+tests_generated\test_id_1_2.py:160: AssertionError"
+tests_generated/test_id_1_2.py::test_company_name_negative_validation[test_case1],test_company_name_negative_validation[test_case1],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='', metadata={}), Parameter(parameter_id...ompany Name', value='   ', metadata={}), Parameter(parameter_id='P003', name='Company Name', value=None, metadata={})])
+test_case = <test_id_1_2.MasterTestCase object at 0x000001D9708D6D50>
+
+    @pytest.mark.parametrize(""test_case"", ALL_1_2_COMPANYNAME_TESTS)
+    def test_company_name_negative_validation(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(
+                f""Parameter {pid}: {reason}""
+                for pid, reason in failures
+            )
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-1.2-COMPANYNAME-02
+E         Failures:
+E         Parameter P001: Whitespace-only value detected — Must contain valid legal name characters per regex
+E         Parameter P002: Whitespace-only value detected — Must contain valid legal name characters per regex
+E       assert not [('P001', 'Whitespace-only value detected — Must contain valid legal name characters per regex'), ('P002', 'Whitespace-only value detected — Must contain valid legal name characters per regex')]
+
+tests_generated\test_id_1_2.py:160: AssertionError"
+tests_generated/test_id_1_2.py::test_company_name_negative_validation[test_case2],test_company_name_negative_validation[test_case2],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='', metadata={}), Parameter(parameter_id...ompany Name', value='   ', metadata={}), Parameter(parameter_id='P003', name='Company Name', value=None, metadata={})])
+test_case = <test_id_1_2.MasterTestCase object at 0x000001D9708D6E90>
+
+    @pytest.mark.parametrize(""test_case"", ALL_1_2_COMPANYNAME_TESTS)
+    def test_company_name_negative_validation(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(
+                f""Parameter {pid}: {reason}""
+                for pid, reason in failures
+            )
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-1.2-COMPANYNAME-03
+E         Failures:
+E         Parameter P003: NULL value detected — Required legal identity field
+E       assert not [('P003', 'NULL value detected — Required legal identity field')]
+
+tests_generated\test_id_1_2.py:160: AssertionError"

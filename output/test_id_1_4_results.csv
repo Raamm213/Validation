@@ -1,0 +1,134 @@
+test_case_id,test_case_name,test_case_result,test_case_error
+tests_generated/test_id_1_4.py::test_company_name_business_rules[test_case0],test_company_name_business_rules[test_case0],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='Microsft Corporation', metadata={}), Pa...value='Mikrosoft Corp', metadata={}), Parameter(parameter_id='P005', name='Company Name', value='Tesla', metadata={})])
+test_case = <test_id_1_4.MasterTestCase object at 0x000001D9708F5A90>
+
+    @pytest.mark.parametrize(""test_case"", ALL_1_4_COMPANYNAME_TESTS)
+    def test_company_name_business_rules(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(
+                f""Parameter {pid}: {reason}"" for pid, reason in failures
+            )
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-1.4-COMPANYNAME-01
+E         Failures:
+E         Parameter P001: Violates business rule: Must match official government registration documents
+E         Parameter P002: Violates business rule: Must match official government registration documents
+E         Parameter P003: Violates business rule: Must match official government registration documents
+E         Parameter P004: Violates business rule: Must match official government registration documents
+E         Parameter P005: Violates business rule: Must match official government registration documents
+E       assert not [('P001', 'Violates business rule: Must match official government registration documents'), ('P002', 'Violates busines...nt registration documents'), ('P005', 'Violates business rule: Must match official government registration documents')]
+
+tests_generated\test_id_1_4.py:214: AssertionError"
+tests_generated/test_id_1_4.py::test_company_name_business_rules[test_case1],test_company_name_business_rules[test_case1],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='Microsft Corporation', metadata={}), Pa...value='Mikrosoft Corp', metadata={}), Parameter(parameter_id='P005', name='Company Name', value='Tesla', metadata={})])
+test_case = <test_id_1_4.MasterTestCase object at 0x000001D9708D6FD0>
+
+    @pytest.mark.parametrize(""test_case"", ALL_1_4_COMPANYNAME_TESTS)
+    def test_company_name_business_rules(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(
+                f""Parameter {pid}: {reason}"" for pid, reason in failures
+            )
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-1.4-COMPANYNAME-02
+E         Failures:
+E         Parameter P002: Below minimum legal identity completeness
+E         Parameter P003: Below minimum legal identity completeness
+E         Parameter P005: Below minimum legal identity completeness
+E       assert not [('P002', 'Below minimum legal identity completeness'), ('P003', 'Below minimum legal identity completeness'), ('P005', 'Below minimum legal identity completeness')]
+
+tests_generated\test_id_1_4.py:214: AssertionError"
+tests_generated/test_id_1_4.py::test_company_name_business_rules[test_case2],test_company_name_business_rules[test_case2],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='Microsft Corporation', metadata={}), Pa...value='Mikrosoft Corp', metadata={}), Parameter(parameter_id='P005', name='Company Name', value='Tesla', metadata={})])
+test_case = <test_id_1_4.MasterTestCase object at 0x000001D9708D7110>
+
+    @pytest.mark.parametrize(""test_case"", ALL_1_4_COMPANYNAME_TESTS)
+    def test_company_name_business_rules(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(
+                f""Parameter {pid}: {reason}"" for pid, reason in failures
+            )
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-1.4-COMPANYNAME-03
+E         Failures:
+E         Parameter P001: Must match official registered company name
+E         Parameter P002: Must match official registered company name
+E         Parameter P003: Must match official registered company name
+E         Parameter P004: Must match official registered company name
+E         Parameter P005: Must match official registered company name
+E       assert not [('P001', 'Must match official registered company name'), ('P002', 'Must match official registered company name'), ('P...me'), ('P004', 'Must match official registered company name'), ('P005', 'Must match official registered company name')]
+
+tests_generated\test_id_1_4.py:214: AssertionError"
+tests_generated/test_id_1_4.py::test_company_name_business_rules[test_case3],test_company_name_business_rules[test_case3],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='Microsft Corporation', metadata={}), Pa...value='Mikrosoft Corp', metadata={}), Parameter(parameter_id='P005', name='Company Name', value='Tesla', metadata={})])
+test_case = <test_id_1_4.MasterTestCase object at 0x000001D9708D15B0>
+
+    @pytest.mark.parametrize(""test_case"", ALL_1_4_COMPANYNAME_TESTS)
+    def test_company_name_business_rules(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(
+                f""Parameter {pid}: {reason}"" for pid, reason in failures
+            )
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-1.4-COMPANYNAME-04
+E         Failures:
+E         Parameter P001: Does not match official registration record (possible phonetic misspelling)
+E         Parameter P002: Does not match official registration record (possible phonetic misspelling)
+E         Parameter P003: Does not match official registration record (possible phonetic misspelling)
+E         Parameter P004: Does not match official registration record (possible phonetic misspelling)
+E         Parameter P005: Does not match official registration record (possible phonetic misspelling)
+E       assert not [('P001', 'Does not match official registration record (possible phonetic misspelling)'), ('P002', 'Does not match off...sible phonetic misspelling)'), ('P005', 'Does not match official registration record (possible phonetic misspelling)')]
+
+tests_generated\test_id_1_4.py:214: AssertionError"
+tests_generated/test_id_1_4.py::test_company_name_business_rules[test_case4],test_company_name_business_rules[test_case4],fail,"dataset = Dataset(parameters=[Parameter(parameter_id='P001', name='Company Name', value='Microsft Corporation', metadata={}), Pa...value='Mikrosoft Corp', metadata={}), Parameter(parameter_id='P005', name='Company Name', value='Tesla', metadata={})])
+test_case = <test_id_1_4.MasterTestCase object at 0x000001D9708D16E0>
+
+    @pytest.mark.parametrize(""test_case"", ALL_1_4_COMPANYNAME_TESTS)
+    def test_company_name_business_rules(dataset, test_case):
+        failures = evaluate_conditional(test_case, dataset)
+    
+>       assert not failures, (
+            f""\nValidation Failure\n""
+            f""Test Case: {test_case.test_id}\n""
+            f""Failures:\n"" +
+            ""\n"".join(
+                f""Parameter {pid}: {reason}"" for pid, reason in failures
+            )
+        )
+E       AssertionError: 
+E         Validation Failure
+E         Test Case: TC-1.4-COMPANYNAME-05
+E         Failures:
+E         Parameter P001: Missing legal suffix (Inc., Ltd., Corp.)
+E         Parameter P002: Missing legal suffix (Inc., Ltd., Corp.)
+E         Parameter P003: Missing legal suffix (Inc., Ltd., Corp.)
+E         Parameter P004: Missing legal suffix (Inc., Ltd., Corp.)
+E         Parameter P005: Missing legal suffix (Inc., Ltd., Corp.)
+E       assert not [('P001', 'Missing legal suffix (Inc., Ltd., Corp.)'), ('P002', 'Missing legal suffix (Inc., Ltd., Corp.)'), ('P003', ..., Corp.)'), ('P004', 'Missing legal suffix (Inc., Ltd., Corp.)'), ('P005', 'Missing legal suffix (Inc., Ltd., Corp.)')]
+
+tests_generated\test_id_1_4.py:214: AssertionError"
